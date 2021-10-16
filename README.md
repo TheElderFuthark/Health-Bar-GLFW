@@ -6,4 +6,5 @@ library stored in the root project folder.
 Also, use the CMake GUI desktop application to configure 
 the project.
 
-![Video](https://www.youtube.com/watch?v=hYbg8lwWfhc / GIF)
+
+https://www.youtube.com/watch?v=hYbg8lwWfhc
