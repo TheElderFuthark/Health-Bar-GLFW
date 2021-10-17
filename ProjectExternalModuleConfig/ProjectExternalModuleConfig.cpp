@@ -1,5 +1,5 @@
 ﻿/* @Author: Lloyd Thomas
-   @Date: 22/07/2021
+   @Date: 17/10/2021
 */
 #include "ProjectExternalModuleConfig.h"
 #include "Modules/PlayerHUDTest.h"
@@ -35,7 +35,6 @@ void Project_External_Module_Config::Run_Test_HUD_Display(Player_HUD_Test hud_di
 		// Updates and displays HUD
 		if(hud_display.is_hud_active) {
 			// Draws HUD
-			hud_display.Draw_HUD_Background_Layer(graphics_window);
 			hud_display.Draw_HUD(graphics_window,
 				x, y,
 				height,

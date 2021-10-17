@@ -1,5 +1,5 @@
 ﻿# @Author: Lloyd Thomas
-# @Date: 21/07/2021
+# @Date: 17/10/2021
 
 
 # CMake Version
@@ -36,18 +36,21 @@ find_package(OpenGL REQUIRED
 
 # Src Files (.cpp and .h)
 add_executable(ProjectExternalModuleConfig
+	# Externals 
+	"glew-2.1.0-win32/glew-2.1.0/include/GL/eglew.h" 
+	"glew-2.1.0-win32/glew-2.1.0/include/GL/glew.h" 
+	"glew-2.1.0-win32/glew-2.1.0/include/GL/glxew.h" 
+	"glew-2.1.0-win32/glew-2.1.0/include/GL/wglew.h"
+
 	# Main testing class
 	"ProjectExternalModuleConfig.cpp" "ProjectExternalModuleConfig.h"
 	
-	# /Modules/
+	# Modules
 	"Modules/PlayerHUDTest.cpp" "Modules/PlayerHUDTest.h"
-	
-	# Other libs
-	"stb/stb_image.cpp" "stb/stb_image.h"
 
 	# Main src file
 	"Main.cpp"
- )
+)
 
 
 # Include dirs
